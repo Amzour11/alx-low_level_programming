@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * Description: prints all single digit numbers of base 10 starting from 0
+ * Description: prints numbers
  *
  * Return: 0
 */
@@ -14,10 +14,10 @@ int main(void)
 
 	while (digit <= 9)
 	{
-		printf("%d", digit);
+		printf("%i", digit);
 		digit++;
 	}
-	printf('\n');
+	printf("\n");
 
 	return (0);
 }
