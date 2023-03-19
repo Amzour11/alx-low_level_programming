@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * Description: Print all the letters except q and e
+ * Descriptin: prints all letters except q and e
  *
  * Return: 0
 */
@@ -14,10 +14,10 @@ int main(void)
 
 	while (ch <= 'z')
 	{
-		if (ch == 'e' || ch == 'q')
+		if (ch == 'q' || ch == 'e')
 			ch++;
 		putchar(ch);
-		ch++
+		ch++;
 	}
 	putchar('\n');
 
