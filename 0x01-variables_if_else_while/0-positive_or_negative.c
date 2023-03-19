@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main -  Entry point
+ * main - Entry point
  *
- * Description: A C program that prints true or false validation
+ * A C program that prints true or false validation
  *
  * Return: 0
 */
