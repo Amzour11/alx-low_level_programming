@@ -1,10 +1,10 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 /**
  * main - Entry point
  *
- * A C program that prints true or false validation
+ * description: positive or negative validation
  *
  * Return: 0
 */
