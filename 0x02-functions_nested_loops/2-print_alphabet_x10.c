@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 - function that prints alphabet x10 uising prototype
+ * print_alphabet_x10 - using function that prints alphabet x10
  *
 */
 
@@ -13,6 +13,6 @@ void print_alphabet_x10(void)
 	{
 		for (ch = 'a'; ch <= 'z'; ch++)
 			_putchar(ch);
-		putchar('\n');
+		_putchar('\n');
 	}
 }
