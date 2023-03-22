@@ -2,6 +2,7 @@
 
 /**
  * print_alphabet_x10 - function that prints alphabet x10 uising prototype
+ *
 */
 
 void print_alphabet_x10(void)
