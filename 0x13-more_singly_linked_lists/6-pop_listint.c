@@ -4,8 +4,9 @@
  * pop_listint - deletes the head node of a listint_t
  * @head:double pointer
  *
- * Return: oioozs node's value
+ * Return: empty
  */
+
 int pop_listint(listint_t **head)
 {
 	listint_t *node;
