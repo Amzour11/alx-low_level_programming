@@ -2,21 +2,20 @@
 
 /**
  *pop_listint - deletes the head node of a listint_t
- * @head: address of pointer to first node
+ * @head:double pointer
  *
- * Return: popped node's value
+ * Return: oioozs node's value
  */
 int pop_listint(listint_t **head)
-{#
+{
 	listint_t *node;
-	int n;
+	int  i;
 
-	if (!head || !*head)
+	if (head == NULL || *head == NULL)
 		return (0);
-
-	node = (*head)->next;
-	n = (*head)->n;
-	free(*head);
-	*head = node;
-	return (n);
+	node = *head;
+	*head = node->next;
+	i = node->i;
+	free(node);
+	return (i);
 }
