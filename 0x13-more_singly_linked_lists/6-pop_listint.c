@@ -1,22 +1,23 @@
 #include "lists.h"
 
 /**
- * pop_listint - deletes the head node of a listint_t
- * @head: double pointer
+ * pop_listint - pops head node of list
+ * @head: address of pointer
  *
- * Return: empty
+ * Return: value of popped node
  */
 
 int pop_listint(listint_t **head)
 {
 	listint_t *node;
-	int  i;
+	int n;
 
-	if (head == NULL || *head == NULL)
+	if (!head || !*head)
 		return (0);
-	node = *head;
-	*head = node->next;
-	i = node->i;
-	free(node);
-	return (i);
+
+	node = (*head)->next;
+	n = (*head)->n;
+	free(*head);
+	*head = node;
+	return (n);
 }
