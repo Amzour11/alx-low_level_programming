@@ -15,10 +15,10 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 
 	b = 0;
 	result = 1;
-	differnce = n ^ m;
+	difference = n ^ m;
 	for (a = 0; a < (sizeof(unsigned long int) * 8); a++)
 	{
-		if (result == (differnce & result))
+		if (result == (difference & result))
 			b++;
 		result <<= 1;
 	}
